@@ -1,0 +1,30 @@
+
+* {
+  color: #fff;
+}
+
+.main {
+  background-color: #000;
+  height: 100dvh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  width: 90%;
+  padding: 10px 5%;
+  background-color: rgb(60, 60, 60);
+}
+
+.dragon {
+  height: 8dvh;
+  width: auto;
+}
+
+button {
+  border: none;
+  color: #000;
+  background-color: transparent;
+  font-size: 1em;
+}
