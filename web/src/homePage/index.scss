@@ -5,7 +5,6 @@
 
 .main {
   background-color: #000;
-  height: 100dvh;
 }
 
 .header {
@@ -20,6 +19,29 @@
 .dragon {
   height: 8dvh;
   width: auto;
+}
+
+section {
+  height: 100dvh;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p, ul, li {
+  font-size: 1.2em;
+}
+
+.sectionHome {
+  display: flex;
+  div {
+    padding: 2em;
+    test-align: jutistify;
+  }
+  img {
+    height: 80%;
+  }
 }
 
 button {
