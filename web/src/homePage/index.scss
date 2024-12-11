@@ -16,7 +16,7 @@
   background-color: rgb(60, 60, 60);
 }
 
-.dragon {
+.logo {
   height: 8dvh;
   width: auto;
 }
@@ -37,7 +37,7 @@ p, ul, li {
   display: flex;
   div {
     padding: 2em;
-    test-align: jutistify;
+    text-align: jutistify;
   }
   img {
     height: 80%;
@@ -46,7 +46,7 @@ p, ul, li {
 
 button {
   border: none;
-  color: #000;
+  color: #fff;
   background-color: transparent;
   font-size: 1em;
 }

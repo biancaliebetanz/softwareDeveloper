@@ -4,7 +4,7 @@ export default function HomePage(){
   return (
     <main className="main">
       <header className="header">
-        <img src="/icons/dragon.svg" className="dragon"/>
+        <img src="/icons/logo.svg" className="logo"/>
         <button>Home</button>
         <button>Cursos</button>
         <button>Tecnologias</button>
