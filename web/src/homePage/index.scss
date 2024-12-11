@@ -1,10 +1,8 @@
-
-* {
-  color: #fff;
-}
-
 .main {
-  background-color: #000;
+  background-color: hsl(0, 0%, 0%);
+  color: #fff;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .header {
@@ -12,8 +10,9 @@
   align-items: center;
   gap: 10%;
   width: 90%;
-  padding: 10px 5%;
-  background-color: rgb(60, 60, 60);
+  padding: 5px 5%;
+  background-color: rgba(0, 0, 0, 0.688);
+  position: fixed;
 }
 
 .logo {
@@ -22,51 +21,16 @@
 }
 
 section {
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
+  color: rgb(64, 130, 250);
 }
 
-p, ul, li {
+p, li {
   font-size: 1.2em;
-}
-
-.sectionHome {
-  display: flex;
-  div {
-    padding: 2em;
-    text-align: justify;
-  }
-  img {
-    height: 80%;
-  }
-}
-
-.sectionCursos {
-  h1, p {
-    text-align: center;
-    margin: 1em 0em;
-  }
-}
-
-.sectionCursosLista {
-  display: flex;
-  text-align: justify;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  list-style-type: none;
-
-  li 
-  {
-    font-size: 1em;
-    min-height: 18dvh;
-    width: 20dvw;
-    padding: 5px;
-    background-color: #ffffff55;
-  }
 }
 
 button {
@@ -74,4 +38,230 @@ button {
   color: #fff;
   background-color: transparent;
   font-size: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(64, 130, 250);
+}
+
+.sectionHome {
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1em;
+  padding: 2em;
+  text-align: justify;
+  img {
+    height: 60dvh;
+  }
+}
+
+.sectionCursos {
+  display: flex;
+  gap: 5dvh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sectionCursosContainer {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+
+  > div
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35dvh;
+    width: 20dvw;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+.sectionCursosContainer > div:hover {
+  color: rgb(64, 130, 250); 
+  border: 1px solid rgb(64, 130, 250);
+  cursor: default;
+}
+
+.sectionTecnologias {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+  gap: 1em;
+}
+
+.carousel {
+  display: flex;
+  width: fit-content;
+  gap: 20%;
+  animation: slide ease-in-out 35s;
+  animation-iteration-count: infinite;
+  position: relative;
+  left: 0px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 3em;
+  text-align: center;
+  
+  img {
+    height: 30dvh;
+  }
+}
+
+.sectionGames {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 2em;
+
+  img {
+    height: 50dvh;
+  }
+}
+
+.sectionEvolucao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  padding: 2em;
+  text-align: center;
+  li, ul {
+    text-align: left;
+  }
+}
+
+.flashcard {
+  width: 90%;
+  height: 50%;
+  img {
+    height: 10dvh;
+  }
+}
+
+.flashcard:hover {
+  border: 1px solid rgb(120, 130, 250);
+  color: rgb(120, 130, 250);
+}
+
+.sectionVantagens {
+  display: flex;
+  height: 100dvh;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    height: 80%;
+    max-width: 50%;
+  }
+  div {
+    padding: 2em;
+  }
+}
+
+.sectionInfo {
+  display: flex;
+  padding: 2em;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 700px) {
+  section{
+    margin: 5dvh 0px;
+    height: fit-content;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  p, li, ul, h2 {
+    font-size: 14px;
+  }
+  .sectionHome {
+    h1 {
+      text-align: center;
+    }
+    img {
+      width: 0px;
+      visibility: hidden;
+    }
+  }
+  .sectionCursosContainer {
+      flex-direction: column;
+      padding: 10px;
+      div {
+        border: 1px solid rgb(64, 130, 250);
+        font-size: 14px;
+        width: 90%;
+        height: 30%;
+      }
+  }
+  .sectionTecnologias {
+    padding: 0px;
+  }
+  .carousel {
+    align-self: center;
+    position: relative;
+  }
+  .card {
+    padding: 0px;
+    img {
+      height: 3em;
+    }
+  }
+  .sectionGames  {
+    h1, p {
+      text-align: center;
+    }
+    img {
+      visibility: none;
+      width: 0px;
+    }
+  }
+  .sectionVantagens {
+    img{
+      width: 0px;
+      visibility: hidden;
+    }
+  }
+  .sectionInfo {
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  .header {
+    visibility: hidden;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  50% {
+    left: 0;
+  }
+  75% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
 }
