@@ -24,11 +24,11 @@ export default function HomePage(){
       <section className="sectionCursos">
         <h1>Principais Cursos</h1>
         <p>As principais áreas de formação que te preparam para o desenvolvimento de software são:</p>
-        <ul>
-          <li>Ciência da Computação: Aborda fundamentos teóricos da computação, algoritmos, estruturas de dados e linguagens de programação.</li>
-          <li>Engenharia de Software: Foca em metodologias e ferramentas para desenvolver softwares de forma eficiente e com qualidade.</li>
-          <li>Análise e Desenvolvimento de Sistemas: Combina conhecimentos de sistemas de informação com programação.</li>
-          <li>Sistemas de Informação: Engloba gestão da informação, banco de dados e desenvolvimento de sistemas.</li>
+        <ul className="sectionCursosLista">
+          <li> sp Ciência da Computação:<p>Aborda fundamentos teóricos da computação, algoritmos, estruturas de dados e linguagens de programação.</p></li>
+          <li>Engenharia de Software:<p>Foca em metodologias e ferramentas para desenvolver softwares de forma eficiente e com qualidade.</p></li>
+          <li>Análise e Desenvolvimento de Sistemas:<p> Combina conhecimentos de sistemas de informação com programação.</p></li>
+          <li>Sistemas de Informação:<p>Engloba gestão da informação, banco de dados e desenvolvimento de sistemas.</p></li>
         </ul>
       </section>
       <section>

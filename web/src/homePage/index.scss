@@ -37,10 +37,35 @@ p, ul, li {
   display: flex;
   div {
     padding: 2em;
-    text-align: jutistify;
+    text-align: justify;
   }
   img {
     height: 80%;
+  }
+}
+
+.sectionCursos {
+  h1, p {
+    text-align: center;
+    margin: 1em 0em;
+  }
+}
+
+.sectionCursosLista {
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  list-style-type: none;
+
+  li 
+  {
+    font-size: 1em;
+    min-height: 18dvh;
+    width: 20dvw;
+    padding: 5px;
+    background-color: #ffffff55;
   }
 }
 
