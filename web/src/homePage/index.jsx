@@ -3,7 +3,7 @@ import "./index.scss"
 export default function HomePage(){
   return (
     <main className="main">
-      <header className="header">
+      <header className="header flexbox">
         <img src="/icons/logo.svg" className="logo"/>
         <button>Home</button>
         <button>Cursos</button>
@@ -12,7 +12,7 @@ export default function HomePage(){
         <button>Vantagens</button>
         <button>Info</button>
       </header>
-      <section className="sectionHome">
+      <section className="sectionHome flexbox">
         <div>
           <h1>O que é Desenvolvimento de Software?</h1>
           <p>Desenvolvimento de software é o processo de criação, design, implementação e manutenção de software. Em termos mais simples,
@@ -21,9 +21,9 @@ export default function HomePage(){
         </div>
         <img src="/icons/condicionals.jpg" alt="Notebook com VsCode aberto." />
       </section>
-      <section className="sectionCursos">
+      <section className="sectionCursos flexbox">
         <h1>Principais Cursos</h1>
-        <div className="sectionCursosContainer">
+        <div className="sectionCursosContainer flexbox">
           <div>
             <h2>Ciência da Computação</h2>
             <p>Aborda fundamentos teóricos da computação, algoritmos, estruturas de dados e linguagens de programação.</p></div>
@@ -38,16 +38,16 @@ export default function HomePage(){
             <p>Engloba gestão da informação, banco de dados e desenvolvimento de sistemas.</p></div>
         </div>
       </section>
-      <section className="sectionTecnologias">
+      <section className="sectionTecnologias flexbox">
           <h1>Principais Tecnologias do Desenvolvimento Web</h1>
           <p>O desenvolvimento web se concentra na criação de sites e aplicações web. Algumas das principais tecnologias utilizadas são:</p>
-          <div className="carousel">
+          <div className="carousel flexbox">
             <div className="card">
               <h2>HTML</h2>
               <img src="/icons/html.svg" alt="" />
               <p> Estrutura básica das páginas web.</p>
             </div>
-            <div className="card">
+            <div className="card flexbox">
               <h2>CSS</h2>
               <img src="/icons/css.svg" alt="" />
               <p>Define a aparência visual das páginas.</p></div> 
@@ -56,19 +56,19 @@ export default function HomePage(){
               <img src="/icons/javascript.svg" alt="" />
               <p>Linguagem de programação para criar interatividade e dinamismo.</p>
             </div>
-            <div className="card">
+            <div className="card flexbox">
               <h2>Frameworks</h2>
               <img src="/icons/next.svg" alt="" />
               <p>Conjuntos de ferramentas e bibliotecas que agilizam o desenvolvimento.</p>
               </div>
-            <div className="card">
+            <div className="card flexbox">
               <h2>Banco de dados</h2>
               <img src="/icons/database.svg" alt="" />
-              <p>Para armazenar e gerenciar dados, como MySQL, PostgreSQL e MongoDB.</p>
+              <p>Para armazenar e gerenciar dados essenciais de um software.</p>
             </div>
           </div>
       </section>
-      <section className="sectionGames">
+      <section className="sectionGames flexbox">
         <div>
             <h1>Desenvolvimento de Jogos</h1>
             <p>Desenvolvimento de um jogos envolve diversas etapas e profissionais especializados</p>
@@ -82,7 +82,7 @@ export default function HomePage(){
         </div>
         <img src="/icons/mariobros.jpg" alt="" />
       </section>
-      <section className="sectionEvolucao">
+      <section className="sectionEvolucao flexbox">
         <div> 
           <h1>Evolução dos Jogos</h1>
           <p>O futuro dos jogos eletrônicos é promissor, com tecnologias como a inteligência artificial, a 
@@ -139,7 +139,7 @@ export default function HomePage(){
           </ul>
         </div>
       </section>
-      <section className="sectionVantagens">  
+      <section className="sectionVantagens flexbox">  
         <div>
             <h1>Vantagens da profissão</h1>
             <ul>
@@ -154,7 +154,7 @@ export default function HomePage(){
         </div>
         <img src="/icons/image.jpg" alt="" />
       </section>
-      <section className="sectionInfo">
+      <section className="sectionInfo flexbox">
         <img src="/icons/webdesign.svg" alt="" />
         <p>Obrigada por ler isso tudo! Esse site foi criado pela Bianca Liebetanz. Feira das Profissoes do Salotti, 2024.</p>
       </section>
