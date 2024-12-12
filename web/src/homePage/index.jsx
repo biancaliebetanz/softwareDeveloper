@@ -156,7 +156,7 @@ export default function HomePage(){
       </section>
       <section className="sectionInfo">
         <img src="/icons/webdesign.svg" alt="" />
-        <p>Obrigada por ler isso tudo. Esse site foi criado pela Bianca Liebetanz. Feira das Profissoes do Salotti, 2024.</p>
+        <p>Obrigada por ler isso tudo! Esse site foi criado pela Bianca Liebetanz. Feira das Profissoes do Salotti, 2024.</p>
       </section>
     </main>
   )
